@@ -10,3 +10,9 @@
 .navbar-light .navbar-nav .nav-link:hover {
     color: red;
 }
+
+/* hero area */
+.w-100 {
+    width: 100% !important;
+    height: 90vh;
+}
