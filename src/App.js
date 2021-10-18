@@ -6,6 +6,9 @@ function App() {
         <>
             <BrowserRouter>
                 <Switch>
+                    <Route path="/home">
+                        <Home></Home>
+                    </Route>
                     <Route exact path="/">
                         <Home></Home>
                     </Route>
