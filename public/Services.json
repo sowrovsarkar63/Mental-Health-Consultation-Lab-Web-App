@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Therapy for Your Child, Teen or Young Adult",
+        "img": "https://familypsychnj.com/wp-content/uploads/sites/209/2019/03/shutterstock_1211286847.jpg",
+        "description": "There are times we feel anxious. Or sometimes we may feel depressed. Other times we might just feel like we’re simply “stuck” in life. We are human, and our emotions experience periods of highs and lows while we encounter the good times in life as well as the unexpected. Our day-to-day lives are bombarded with other people, busy schedules, trying careers and more. We at MHC LAB and Therapy understand the ebbs and flows of life—and how it can all get to be a bit much."
+    },
+    {
+        "id": 2,
+        "name": "Depression & Anxiety",
+        "img": "https://familypsychnj.com/wp-content/uploads/sites/209/2019/03/shutterstock_653645812.jpg",
+        "description": "Depression and anxiety disorders are different, but people with depression often experience symptoms similar to those of an anxiety disorder, such as nervousness, irritability, and problems sleeping and concentrating. Each disorder has its own causes and its own emotional and behavioral symptoms. Depression, even the most severe cases, can be effectively treated.  The earlier that treatment can begin, the more effective it is. The first step to getting appropriate treatment is to visit a doctor or mental health specialist. Your doctor can provide you with a physical exam, interview, or lab tests to determine if there are any medical conditions that may be causing your symptoms. If your doctor can find no medical condition that may be causing the depression, the next step is a psychological evaluation."
+    },
+    {
+        "id": 3,
+        "name": "Attention Deficit Hyperactivity Disorder",
+        "img": "https://familypsychnj.com/wp-content/uploads/sites/209/2019/03/shutterstock_570683863.jpg",
+        "description": "Understanding the symptoms, diagnosis and treatment of ADHD is a complex process––especially if a loved one is suffering from symptoms. Although this disorder has been around for more than a hundred years–– the first documented symptoms was recorded in 1902, by Sir George Frederick, an English pediatrician––it did not become officially recognized by the mainstream medical community until the late 20th century. Even today, there is still no definitive physical testing available to diagnose the disorder, and ADHD is easily misdiagnosed due to the fact many other conditions present with similar symptoms. ADHD can be a lifelong battle that stems from childhood. However, by spotting the signs early and following-up with regular psychiatric sessions, proper medication, and a solid support group at home as well as through independent organizations, this disorder is manageable."
+    },
+    {
+        "id": 4,
+        "name": "Worker’s Compensation",
+        "img": "https://familypsychnj.com/wp-content/uploads/sites/209/2019/03/shutterstock_1037672110.jpg",
+        "description": "The burden of proof is on the employee, and while an experienced psychiatrist can help determine the cause of the mental condition, the lack of physical proof makes successfully establishing a claim difficult. If a workplace exposes an employee to excessive levels of stress that fall outside the scope of industry-accepted stress levels, they may be eligible to receive workers’ compensation.As part of the investigatory process, individuals can expect the employer to thoroughly examine their personal lives to ensure that the condition was not the result of stress outside of work. Relationships, friendships, finances, and family stress will all be taken into consideration when examining the basis of a claim.While the employer may be ready and willing to provide compensation for treatment and therapy, their insurance company may not be so generous. Insurance companies do not want to provide coverage unless they clinically prove that working conditions caused the condition. Otherwise, anyone suffering from general stress or anxiety would be eligible to receive workers’ compensation. However, should the work environment clearly cause the condition, the insurance agency representing the employer will be obligated to cover the cost of treatment and associated wage loss."
+    },
+    {
+        "id": 5,
+        "name": "Post-Traumatic Stress Disorder (PTSD)",
+        "img": "https://familypsychnj.com/wp-content/uploads/sites/209/2019/03/shutterstock_1159917661.jpg",
+        "description": "Post-traumatic stress disorder (PTSD) is a mental health condition that’s triggered by a terrifying event, either experiencing it or witnessing it. When in danger, it’s natural to feel afraid. This fear triggers many split-second changes in the body to prepare to defend against the danger or to avoid it. This “fight-or-flight” response is a healthy reaction meant to protect a person from harm. But in post-traumatic stress disorder (PTSD), this reaction is changed or damaged. People who have PTSD may feel stressed or frightened even when they’re no longer in danger.There are several types of psychotherapy used to treat children and adults with PTSD. Some include cognitive therapy, exposure therapy, and eye movement desensitization and reprocessing. All these approaches can help you gain control of lasting fear after a traumatic event."
+    },
+    {
+        "id": 6,
+        "name": "Women’s Behavioral Health Issues",
+        "img": "https://familypsychnj.com/wp-content/uploads/sites/209/2019/03/shutterstock_795967777.jpg",
+        "description": "Women’s health is an area of medicine that receives too little attention. Often, women suffer in silence, combating symptoms on their own without seeking professional help. In fact, an estimated one in five women will cope with clinical depression at some point in her life without seeking professional help or guidance. Daily responsibilities and societal expectations can leave women feeling isolated, alone, and unable to pursue treatment. At MHC LAB, women will find the supportive environment they need to overcome depression, seek treatment for anxiety, and receive help for other behavioral health disorders. Our facility commonly provides:"
+    }
+]
