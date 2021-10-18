@@ -1,0 +1,12 @@
+.navbar-text {
+    padding-top: 0.8rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1.5rem;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: red;
+}
