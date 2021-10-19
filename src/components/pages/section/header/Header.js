@@ -1,48 +1,16 @@
 import React from "react";
-import { Button, Carousel, Container, Nav, Navbar } from "react-bootstrap";
+import { Carousel } from "react-bootstrap";
 import img1 from "../../../assets/header/img1.jpg";
 import img2 from "../../../assets/header/weimprovementalhealth.jpg";
 import img3 from "../../../assets/header/wetakecareofkidhealth.jpg";
 import "./Header.css";
+import NavBar from "./Nav/Navbar";
 
 const Header = () => {
     return (
-        <Container fluid className="m-0 p-0">
-            <Navbar
-                className="shadow-sm "
-                collapseOnSelect
-                expand="lg"
-                bg="light"
-                variant="light"
-                sticky="top"
-            >
-                <Container>
-                    <Navbar.Brand href="#home">
-                        <span className="fw-bolder fs-3">
-                            <span className="text-danger ">MHC</span> L
-                            <span className="text-warning ">A</span>B
-                        </span>
-                    </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto fw-bold text-dark">
-                            <Nav.Link href="/">Home</Nav.Link>
-                            <Nav.Link href="/experts">Our Experts</Nav.Link>
-                            <Nav.Link href="/about">About Us</Nav.Link>
-                        </Nav>
-                        <Nav>
-                            <Navbar.Text className="pr-3">
-                                Signed in as: <a href="#login">Sowrov Sarkar</a>
-                            </Navbar.Text>
-                            <Nav.Link href="#memes">
-                                <Button variant="outline-primary">Login</Button>
-                            </Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
-
-            {/* Hero area with img carosel  */}
+        <>
+            {/* Navbar */}
+            <NavBar></NavBar>
             <div className="hero-area">
                 <Carousel>
                     <Carousel.Item interval={5000}>
@@ -97,7 +65,7 @@ const Header = () => {
                     </Carousel.Item>
                 </Carousel>
             </div>
-        </Container>
+        </>
     );
 };
 
