@@ -1,6 +1,7 @@
 import { Route, Switch } from "react-router";
 import { BrowserRouter } from "react-router-dom";
 import About from "./components/pages/About/About";
+import Experts from "./components/pages/Experts/Experts";
 import Home from "./components/pages/Home/Home";
 import Footer from "./components/pages/section/footer/Footer";
 import NavBar from "./components/pages/section/header/Nav/Navbar";
@@ -18,6 +19,11 @@ function App() {
                     <Route path="/about">
                         <NavBar></NavBar>
                         <About></About>
+                        <Footer></Footer>
+                    </Route>
+                    <Route path="/expert">
+                        <NavBar></NavBar>
+                        <Experts></Experts>
                         <Footer></Footer>
                     </Route>
                 </Switch>

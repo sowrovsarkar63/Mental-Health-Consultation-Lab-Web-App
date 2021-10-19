@@ -35,12 +35,12 @@ const About = () => {
 
                 <Row>
                     <h2 className="text-danger">Here We Are</h2>
-                    <Col xs={12} sm={12} md={4} lg={4} xl={4}>
+                    <Col xs={12} md={12} lg={6} xl={6} xxl={5}>
                         <div className="about-gallary">
                             <img src={img1} alt="" />
                         </div>
                     </Col>
-                    <Col xs={12} sm={12} md={4} lg={4} xl={4}>
+                    <Col xs={12} md={12} lg={6} xl={6} xxl={5}>
                         <div className="about-gallary">
                             <img src={img2} alt="" />
                         </div>
