@@ -13,7 +13,7 @@ const Services = () => {
                 </h2>
             </div>
             {/* display services */}
-            <Row xs={1} md={2} lg={3} className="g-4">
+            <Row xs={1} md={2} lg={3} xl={3} className="g-4">
                 <Col>
                     <Card>
                         <Card.Img variant="top" src="holder.js/100px160" />
