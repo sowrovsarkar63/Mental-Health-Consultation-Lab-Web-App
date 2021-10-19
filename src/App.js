@@ -6,6 +6,7 @@ import Home from "./components/pages/Home/Home";
 import NotFound from "./components/pages/NotFound/NotFound";
 import Footer from "./components/pages/section/footer/Footer";
 import NavBar from "./components/pages/section/header/Nav/Navbar";
+import ServiceDescription from "./components/pages/section/services/ServiceDescription";
 function App() {
     return (
         <>
@@ -16,6 +17,11 @@ function App() {
                     </Route>
                     <Route exact path="/">
                         <Home></Home>
+                    </Route>
+                    <Route path="/details/:id">
+                        <NavBar></NavBar>
+                        <ServiceDescription></ServiceDescription>
+                        <Footer></Footer>
                     </Route>
                     <Route path="/about">
                         <NavBar></NavBar>

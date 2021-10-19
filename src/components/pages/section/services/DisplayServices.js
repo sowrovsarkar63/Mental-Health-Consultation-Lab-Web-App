@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import { Container, Row } from "react-bootstrap";
 import Services from "./Services";
+import "./Services.css";
 const DisplayServices = () => {
     // Load service and display to the ui
     const [Service, setService] = useState([]);
 
     useEffect(() => {
-        fetch("/Services.JSON")
+        fetch("/Services.json")
             .then((res) => res.json())
             .then((data) => setService(data));
     }, []);
