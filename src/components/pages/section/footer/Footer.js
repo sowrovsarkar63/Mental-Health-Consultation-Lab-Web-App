@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="footer-area pt-5">
             <Container>
                 <Row>
-                    <Col xs={12} md={6} lg={6}>
+                    <Col xs={12} md={8} lg={8} xl={8}>
                         <div>
                             <span className="fw-bolder fs-3">
                                 <span className="text-danger ">MHC</span> L
@@ -16,7 +16,7 @@ const Footer = () => {
                         </div>
 
                         <br />
-                        <p className="footer-text text-white">
+                        <p className="footer-text text-white ">
                             We Are Providing Mental Health Consulting Services
                             From Kids To Old. We Have Best Expert's Certified
                             Doctore And They Are Giving WorldClass Treatment
@@ -24,7 +24,7 @@ const Footer = () => {
                         </p>
                     </Col>
 
-                    <Col xs={12} md={6} lg={6} className="visit-page">
+                    <Col xs={12} md={4} lg={4} xl={4} className="visit-page">
                         <Container>
                             {/* footer little menu */}
                             <h2 className="footer-text mt-3 ml-5">
