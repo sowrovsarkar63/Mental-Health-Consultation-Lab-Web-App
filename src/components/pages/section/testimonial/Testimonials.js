@@ -83,7 +83,7 @@ const Testimonials = () => {
                         <div className="testimonials-desc">
                             <h3>Jeniffer Guen</h3>
                             <p>
-                                I'm 19 years old now. When I was 6 my parent's
+                                I'm 19 years old now. When I was 16 my parent's
                                 admitted me MHC LAB for my mental growth.
                                 Because I didn't understand basic thing as a kid
                                 at that time. Thanks MHC LAB
