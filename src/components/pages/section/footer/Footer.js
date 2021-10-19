@@ -32,10 +32,13 @@ const Footer = () => {
                             </h2>
                             <ul>
                                 <li>
+                                    <NavLink to="/Home">Home</NavLink>
+                                </li>
+                                <li>
                                     <NavLink to="/about">About</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/experts">Experts</NavLink>
+                                    <NavLink to="/expert">Experts</NavLink>
                                 </li>
                                 <li>
                                     <NavLink to="/register">Register</NavLink>
