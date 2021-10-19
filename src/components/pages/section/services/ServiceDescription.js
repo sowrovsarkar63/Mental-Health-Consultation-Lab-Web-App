@@ -3,8 +3,8 @@ import { useParams } from "react-router";
 
 const ServiceDescription = () => {
     let { id } = useParams();
-    const [ServiceDetails, setServiceDetails] = useState([]);
-    const [singleService, setsingleService] = useState([]);
+    const [ServiceDetail, setServiceDetails] = useState([]);
+    const [singleService, setsingleService] = useState({});
     useEffect(() => {
         fetch("/Services.json")
             .then((res) => res.json())
@@ -12,14 +12,17 @@ const ServiceDescription = () => {
     }, []);
 
     useEffect(() => {
-        const details = ServiceDetails.find((service) => service.id === id);
-        setsingleService(details);
-    }, [ServiceDetails]);
-    console.log(singleService);
+        const FoundService = ServiceDetail.find(
+            (demoService) => demoService.id == id
+        );
+        setsingleService(FoundService);
+    }, [ServiceDetail]);
+
     return (
         <div>
             <h2>Service Details Page</h2>
-            <h2>Id {id}</h2>
+
+            <h4>Name {singleService?.name}</h4>
         </div>
     );
 };
