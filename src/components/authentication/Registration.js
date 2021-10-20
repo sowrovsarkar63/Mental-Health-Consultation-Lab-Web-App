@@ -10,6 +10,7 @@ const Registration = () => {
         error,
         SignInWithGoogle,
     } = useAuth();
+
     return (
         <section className="d-flex justify-content-center">
             <div className="shadow-lg mb-5 w-50 p-5">
