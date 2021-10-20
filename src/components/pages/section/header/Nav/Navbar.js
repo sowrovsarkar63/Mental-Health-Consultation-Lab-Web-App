@@ -39,7 +39,7 @@ const NavBar = () => {
                             {users ? (
                                 <Navbar.Text className="pr-3">
                                     <span>
-                                        Signed in as:
+                                        Signed in as :{" "}
                                         {!users.displayName
                                             ? users.email
                                             : users.displayName}
