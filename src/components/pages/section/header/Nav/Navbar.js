@@ -1,10 +1,10 @@
 import React from "react";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
-import useFirebase from "../../../../../hooks/useFirebase";
+import useAuth from "../../../../../hooks/useAuth";
 import "../Header.css";
 const NavBar = () => {
-    const { users, HandleLogout } = useFirebase();
+    const { users, HandleLogout } = useAuth();
     return (
         <Container fluid className="m-0 p-0">
             <Navbar

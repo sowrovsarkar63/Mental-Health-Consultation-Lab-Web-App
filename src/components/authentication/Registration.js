@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Container, Form } from "react-bootstrap";
-import useFirebase from "../../hooks/useFirebase";
+import useAuth from "../../hooks/useAuth";
 import "./Registration.css";
 const Registration = () => {
     const {
@@ -9,7 +9,7 @@ const Registration = () => {
         handlePasswordChange,
         error,
         SignInWithGoogle,
-    } = useFirebase();
+    } = useAuth();
     return (
         <section className="d-flex justify-content-center">
             <div className="shadow-lg mb-5 w-50 p-5">

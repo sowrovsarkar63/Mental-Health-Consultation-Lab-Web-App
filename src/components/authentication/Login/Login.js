@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Container, Form } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-import useFirebase from "../../../hooks/useFirebase";
+import useAuth from "../../../hooks/useAuth";
 
 const Login = () => {
     const {
@@ -11,7 +11,7 @@ const Login = () => {
         error,
         users,
         SignInWithGoogle,
-    } = useFirebase();
+    } = useAuth();
 
     return (
         <section className="d-flex justify-content-center mt-3">
