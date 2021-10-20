@@ -1,5 +1,7 @@
 import { Route, Switch } from "react-router";
 import { BrowserRouter } from "react-router-dom";
+import Login from "./components/authentication/Login/Login";
+import Registration from "./components/authentication/Registration";
 import About from "./components/pages/About/About";
 import Experts from "./components/pages/Experts/Experts";
 import Home from "./components/pages/Home/Home";
@@ -33,6 +35,17 @@ function App() {
                         <Experts></Experts>
                         <Footer></Footer>
                     </Route>
+                    <Route path="/login">
+                        <NavBar></NavBar>
+                        <Login></Login>
+                        <Footer></Footer>
+                    </Route>
+                    <Route path="/register">
+                        <NavBar></NavBar>
+                        <Registration></Registration>
+                        <Footer></Footer>
+                    </Route>
+                    {/* not found route */}
                     <Route path="*">
                         <NotFound></NotFound>
                     </Route>
