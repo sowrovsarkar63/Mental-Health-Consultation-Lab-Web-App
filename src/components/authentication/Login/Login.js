@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, Container, Form } from "react-bootstrap";
-import { Redirect, Route } from "react-router";
 import { NavLink } from "react-router-dom";
 import useFirebase from "../../../hooks/useFirebase";
 
@@ -12,12 +11,6 @@ const Login = () => {
         error,
         users,
     } = useFirebase();
-
-    const LoggedIn = () => {
-        <Route path="/login">
-            <Redirect to="/home"></Redirect>;
-        </Route>;
-    };
 
     return (
         <section className="d-flex justify-content-center mt-3">
@@ -59,7 +52,6 @@ const Login = () => {
                             </p>
 
                             <Button
-                                onClick={LoggedIn}
                                 className="mx-0"
                                 variant="primary"
                                 type="submit"
