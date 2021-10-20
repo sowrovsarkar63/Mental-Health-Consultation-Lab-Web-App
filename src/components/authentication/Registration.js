@@ -48,7 +48,7 @@ const Registration = () => {
                             </Form.Group>
                             <p>{error}</p>
                             <Button
-                                className="mx-3"
+                                className="mx-0"
                                 variant="primary"
                                 type="submit"
                             >
@@ -57,7 +57,7 @@ const Registration = () => {
                         </Form>
                     </div>
                     <Container>
-                        <div className="mx-0">
+                        <div className="google-signin">
                             <p>--Or--</p>
                             <Button variant="primary" size="sm" type="submit">
                                 SignIn With Google
