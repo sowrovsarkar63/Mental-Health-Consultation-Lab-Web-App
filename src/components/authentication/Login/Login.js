@@ -7,7 +7,7 @@ const Login = () => {
     const { handleLogin, handleEmailChange, handlePasswordChange, error } =
         useFirebase();
     return (
-        <section className="d-flex justify-content-center">
+        <section className="d-flex justify-content-center mt-3">
             <div className="shadow-lg mb-5 w-50 p-5">
                 <div>
                     <div className="form-container w-50 d-flex justify-content-center mt-5 ">

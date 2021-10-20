@@ -1,8 +1,10 @@
 import React from "react";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
+import useFirebase from "../../../../../hooks/useFirebase";
 import "../Header.css";
 const NavBar = () => {
+    const { users, HandleLogout } = useFirebase();
     return (
         <Container fluid className="m-0 p-0">
             <Navbar
@@ -34,12 +36,35 @@ const NavBar = () => {
                             </Nav.Link>
                         </Nav>
                         <Nav>
-                            <Navbar.Text className="pr-3">
-                                Signed in as: <span>Sowrov Sarkar</span>
-                            </Navbar.Text>
-                            <Nav.Link as={NavLink} to="/login">
-                                <Button variant="outline-primary">Login</Button>
-                            </Nav.Link>
+                            {users ? (
+                                <Navbar.Text className="pr-3">
+                                    <span>
+                                        Signed in as:
+                                        {!users.displayName
+                                            ? users.email
+                                            : users.displayName}
+                                    </span>
+                                </Navbar.Text>
+                            ) : (
+                                ""
+                            )}
+                            {!users ? (
+                                <Nav.Link as={NavLink} to="/login">
+                                    <Button variant="outline-primary">
+                                        Login
+                                    </Button>
+                                </Nav.Link>
+                            ) : (
+                                <Nav.Link
+                                    as={NavLink}
+                                    onClick={HandleLogout}
+                                    to="/login"
+                                >
+                                    <Button variant="outline-danger">
+                                        Logout
+                                    </Button>
+                                </Nav.Link>
+                            )}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

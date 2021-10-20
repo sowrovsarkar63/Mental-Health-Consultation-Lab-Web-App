@@ -3,6 +3,7 @@ import {
     getAuth,
     onAuthStateChanged,
     signInWithEmailAndPassword,
+    signOut,
 } from "firebase/auth";
 import { useEffect, useState } from "react";
 import InitializeApp from "../firebase/Firebase.init";
@@ -96,6 +97,12 @@ const useFirebase = () => {
                 setError(errorMessage);
             });
     };
+    // handle logout
+    const HandleLogout = () => {
+        signOut(auth).then(() => {
+            setuser("");
+        });
+    };
     useEffect(() => {
         onAuthStateChanged(auth, (users) => {
             if (users) {
@@ -112,6 +119,7 @@ const useFirebase = () => {
         error,
         handleEmailChange,
         handlePasswordChange,
+        HandleLogout,
     };
 };
 
