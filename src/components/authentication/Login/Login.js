@@ -10,6 +10,7 @@ const Login = () => {
         handlePasswordChange,
         error,
         users,
+        SignInWithGoogle,
     } = useFirebase();
 
     return (
@@ -63,7 +64,12 @@ const Login = () => {
                     <Container>
                         <div className="google-signin">
                             <p>--Or--</p>
-                            <Button variant="primary" size="sm" type="submit">
+                            <Button
+                                onClick={SignInWithGoogle}
+                                variant="primary"
+                                size="sm"
+                                type="submit"
+                            >
                                 SignIn With Google
                             </Button>
                         </div>

@@ -8,6 +8,7 @@ const Registration = () => {
         handleEmailChange,
         handlePasswordChange,
         error,
+        SignInWithGoogle,
     } = useFirebase();
     return (
         <section className="d-flex justify-content-center">
@@ -59,7 +60,12 @@ const Registration = () => {
                     <Container>
                         <div className="google-signin">
                             <p>--Or--</p>
-                            <Button variant="primary" size="sm" type="submit">
+                            <Button
+                                onClick={SignInWithGoogle}
+                                variant="primary"
+                                size="sm"
+                                type="submit"
+                            >
                                 SignIn With Google
                             </Button>
                         </div>

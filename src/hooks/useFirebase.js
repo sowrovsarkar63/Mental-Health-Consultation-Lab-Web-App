@@ -1,8 +1,10 @@
 import {
     createUserWithEmailAndPassword,
     getAuth,
+    GoogleAuthProvider,
     onAuthStateChanged,
     signInWithEmailAndPassword,
+    signInWithPopup,
     signOut,
 } from "firebase/auth";
 import { useEffect, useState } from "react";
@@ -16,7 +18,7 @@ const useFirebase = () => {
 
     InitializeApp();
     const auth = getAuth();
-    // const GoogleProvider = new GoogleAuthProvider();
+    const GoogleProvider = new GoogleAuthProvider();
     // form handling
     const handleEmailChange = (e) => {
         setEmail(e.target.value);
@@ -70,12 +72,27 @@ const useFirebase = () => {
             .then((userCredential) => {
                 // Signed in
                 const user = userCredential.user;
-                console.log(user);
                 setuser(user);
                 setError("");
                 // ...
             })
             .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                setError(errorMessage);
+            });
+    };
+    // handle google sign in .
+    const SignInWithGoogle = () => {
+        signInWithPopup(auth, GoogleProvider)
+            .then((result) => {
+                // The signed-in user info.
+                const user = result.user;
+                setuser(user);
+                // ...
+            })
+            .catch((error) => {
+                // Handle Errors here.
                 const errorCode = error.code;
                 const errorMessage = error.message;
                 setError(errorMessage);
@@ -87,7 +104,7 @@ const useFirebase = () => {
             .then((result) => {
                 // Signed in
                 const user = result.user;
-                console.log(user);
+
                 setError("");
 
                 // ...
@@ -107,8 +124,6 @@ const useFirebase = () => {
         onAuthStateChanged(auth, (users) => {
             if (users) {
                 setuser(users);
-            } else {
-                // singout
             }
         });
     }, []);
@@ -120,6 +135,7 @@ const useFirebase = () => {
         handleEmailChange,
         handlePasswordChange,
         HandleLogout,
+        SignInWithGoogle,
     };
 };
 
