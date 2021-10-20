@@ -9,6 +9,7 @@ import NotFound from "./components/pages/NotFound/NotFound";
 import Footer from "./components/pages/section/footer/Footer";
 import NavBar from "./components/pages/section/header/Nav/Navbar";
 import ServiceDescription from "./components/pages/section/services/ServiceDescription";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import AuthProvider from "./context/AuthProvider";
 function App() {
     return (
@@ -22,11 +23,11 @@ function App() {
                         <Route exact path="/">
                             <Home></Home>
                         </Route>
-                        <Route path="/details/:id">
+                        <PrivateRoute path="/details/:id">
                             <NavBar></NavBar>
                             <ServiceDescription></ServiceDescription>
                             <Footer></Footer>
-                        </Route>
+                        </PrivateRoute>
                         <Route path="/about">
                             <NavBar></NavBar>
                             <About></About>
