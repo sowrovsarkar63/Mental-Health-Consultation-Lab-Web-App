@@ -28,16 +28,16 @@ function App() {
                             <ServiceDescription></ServiceDescription>
                             <Footer></Footer>
                         </PrivateRoute>
-                        <Route path="/about">
+                        <PrivateRoute path="/about">
                             <NavBar></NavBar>
                             <About></About>
                             <Footer></Footer>
-                        </Route>
-                        <Route path="/expert">
+                        </PrivateRoute>
+                        <PrivateRoute path="/expert">
                             <NavBar></NavBar>
                             <Experts></Experts>
                             <Footer></Footer>
-                        </Route>
+                        </PrivateRoute>
                         <Route path="/login">
                             <NavBar></NavBar>
                             <Login></Login>
