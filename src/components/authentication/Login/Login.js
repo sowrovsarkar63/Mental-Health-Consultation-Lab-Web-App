@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Container, Form } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { NavLink, useHistory, useLocation } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 
 const Login = () => {
@@ -12,6 +12,24 @@ const Login = () => {
         users,
         SignInWithGoogle,
     } = useAuth();
+    const location = useLocation();
+    const history = useHistory();
+    const redirectUri = location.state?.from || "/home";
+    const handleGoogleSignIn = () => {
+        SignInWithGoogle()
+            .then((result) => {
+                // The signed-in user info.
+                // const user = result.user;
+                history.push(redirectUri);
+
+                // ...
+            })
+            .catch((error) => {
+                // Handle Errors here.
+                const errorCode = error.code;
+                const errorMessage = error.message;
+            });
+    };
 
     return (
         <section className="d-flex justify-content-center mt-3">
@@ -65,7 +83,7 @@ const Login = () => {
                         <div className="google-signin">
                             <p>--Or--</p>
                             <Button
-                                onClick={SignInWithGoogle}
+                                onClick={handleGoogleSignIn}
                                 variant="primary"
                                 size="sm"
                                 type="submit"

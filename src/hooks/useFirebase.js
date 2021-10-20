@@ -69,9 +69,9 @@ const useFirebase = () => {
     // login
     const SignInWithEmail = (email, password) => {
         signInWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
+            .then((result) => {
                 // Signed in
-                const user = userCredential.user;
+                const user = result.user;
                 setuser(user);
                 setError("");
                 // ...
@@ -84,19 +84,7 @@ const useFirebase = () => {
     };
     // handle google sign in .
     const SignInWithGoogle = () => {
-        signInWithPopup(auth, GoogleProvider)
-            .then((result) => {
-                // The signed-in user info.
-                const user = result.user;
-                setuser(user);
-                // ...
-            })
-            .catch((error) => {
-                // Handle Errors here.
-                const errorCode = error.code;
-                const errorMessage = error.message;
-                setError(errorMessage);
-            });
+        return signInWithPopup(auth, GoogleProvider);
     };
     // Registration
     const RegisterUser = (email, password) => {
@@ -127,6 +115,7 @@ const useFirebase = () => {
             }
         });
     }, []);
+    console.log(users);
     return {
         handleRegistration,
         handleLogin,
